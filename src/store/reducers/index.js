@@ -5,6 +5,14 @@ const initialState = {
     listMenu: [],
 }
 
+/**
+ * note that mapping variable in reducers to handle the nested object update
+ * is one of the solution. There is also a library to handle this problem but not necessarily needed for the sake of reducing the use of libraries in this project
+ * 
+ * doing this solution could impact on several factor, e.q. performance & the rule of redux (*reducers should be flattened)
+ * 
+ */
+
 export const reducers = (state = initialState, action) => {
     const { payload, type } = action
     switch (type) {

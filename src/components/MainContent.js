@@ -155,7 +155,6 @@ export default function MainContent() {
                                                             :
                                                             null
                                                         }    
-                                                    
                                                 />
                                             </List.Item>
                                             )}

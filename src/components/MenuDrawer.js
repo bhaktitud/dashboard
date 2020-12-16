@@ -12,6 +12,7 @@ const { Sider } = Layout;
 export default function MenuDrawer() {
 
     const [dummyMenuList, setDummyMenuList] = useState([])
+    const [collapsedStatus, setCollapsedStatus] = useState(false)
 
     const listMenu = useSelector(state => state.listMenu)
 
@@ -49,23 +50,37 @@ export default function MenuDrawer() {
         }
     }
 
+    const handleSiderCollapsed = (collapsed, type) => {
+        console.log(collapsed)
+        setCollapsedStatus(!collapsedStatus)
+    }
+
     return (
-        <Sider width={350} style={{height: '93vh', overflowY: 'scroll'}} >
-            <div>
-                <Row span={12} justify='center' align='center' style={{margin: 25}} >
-                    <Image
-                        width={200}
-                        src="https://www.avana.id/assets/images/logo.png"
-                    />
-                </Row>
-                <Row span={12} justify='center' align='center' >
-                    <Avatar size={80} icon={<UserOutlined />} />
-                </Row>
-                <Row span={12} justify='center' align='center' >
-                    <Typography.Title style={{color: '#fff', margin: 20}} level={5}>Hi, Bhakti Budiman</Typography.Title>
-                </Row>
-            <Divider style={{backgroundColor: '#535353'}} />
-            </div>
+        <Sider width={350} collapsible={true} style={{height: '93vh', overflowY: 'scroll'}} onCollapse={handleSiderCollapsed} >
+            {
+                collapsedStatus ?
+                    <div>
+                        <Row span={12} justify='center' align='center' >
+                            <Avatar size={36} src={'https://i.ibb.co/sWCb2Fy/me.jpg'} />
+                        </Row>
+                    </div>
+                    :
+                    <div>
+                        <Row span={12} justify='center' align='center' style={{margin: 25}} >
+                            <Image
+                                width={200}
+                                src="https://www.avana.id/assets/images/logo.png"
+                            />
+                        </Row>
+                        <Row span={12} justify='center' align='center' >
+                            <Avatar size={85} src={'https://i.ibb.co/sWCb2Fy/me.jpg'} />
+                        </Row>
+                        <Row span={12} justify='center' align='center' >
+                            <Typography.Title style={{color: '#fff', margin: 20}} level={5}>Hi, Bhakti Budiman</Typography.Title>
+                        </Row>
+                        <Divider style={{backgroundColor: '#535353'}} />
+                    </div>
+            }
             <Menu
               mode="inline"
               defaultSelectedKeys={['1']}

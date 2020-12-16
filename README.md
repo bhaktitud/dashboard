@@ -9,7 +9,7 @@ Steps to Run on Your Local:
 2. Click on 'Download Zip'
 3. Extract the files, open it and run the cmd / git bash here
 4. Type in 'npm install' to install all the dependencies and wait the process to finish
-5. Type in 'npm start' to run the project, and head to the localhost with the specified port ^_^
+5. Type in 'npm start' to run the project, and head to the localhost with the specified port ^_^ (default localhost:3000)
 
 [By Cloning the files]
 1. Point out your mouse head to the 'code' button on the upper right of the repo
@@ -17,7 +17,7 @@ Steps to Run on Your Local:
 3. Create new folder on your local, open it and run the cmd / git bash here
 4. Type in 'git clone paste_repo_link_here' and wait the process to finish
 5. Type in 'npm install' to install all the dependencies and wait the process to finish
-6. Type in 'npm start' to run the project, and head to the localhost with the specified port ^_^
+6. Type in 'npm start' to run the project, and head to the localhost with the specified port ^_^ (default localhost:3000)
 
 Or, simply hit this link to check out the project
 
