@@ -1,4 +1,4 @@
-import { Layout, Switch, List, Avatar, Collapse } from 'antd';
+import { Layout, Switch, List, Avatar, Collapse, Typography } from 'antd';
 import { RightOutlined, DoubleRightOutlined, FastForwardOutlined } from '@ant-design/icons';
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -90,7 +90,7 @@ export default function MainContent() {
                 <Collapse>
                     {
                         menuJson.map((menuCard, i) => (
-                            <Panel  header={menuCard.id.toUpperCase()} key={menuCard.id} extra={<Switch key={menuCard.id} checked={menuCard.isShowed} onChange={() => handleParentController(menuCard)} />}>
+                            <Panel  header={<Typography.Text strong>{menuCard.id.toUpperCase()}</Typography.Text>} key={menuCard.id} extra={<Switch key={menuCard.id} checked={menuCard.isShowed} onChange={() => handleParentController(menuCard)} />}>
                                 {
                                     menuCard.childs ?
                                         <List
@@ -103,7 +103,7 @@ export default function MainContent() {
                                                     }
                                                     title={
                                                         <div style={{display: "flex", flexDirection: "row"}}>
-                                                            <p>{item.id.toUpperCase()}</p>
+                                                            <Typography.Text strong>{item.id.toUpperCase()}</Typography.Text>
                                                             <Switch key={item.id} style={{marginLeft: 20}} checked={item.isShowed} onChange={() => handleChildMenuFirstLevel(item)} />
                                                         </div>
                                                     }
@@ -120,7 +120,7 @@ export default function MainContent() {
                                                                             }
                                                                             title={
                                                                                 <div style={{display: "flex", flexDirection: "row"}}>
-                                                                                    <p>{item2.id.toUpperCase()}</p>
+                                                                                    <Typography.Text strong>{item2.id.toUpperCase()}</Typography.Text>
                                                                                     <Switch key={item2.id} style={{marginLeft: 20}} checked={item2.isShowed} onChange={() => handleChildMenuSecondLevel(item2)} />
                                                                                 </div>
                                                                             }
@@ -137,7 +137,7 @@ export default function MainContent() {
                                                                                                 }
                                                                                                 title={
                                                                                                     <div style={{display: "flex", flexDirection: "row"}}>
-                                                                                                        <p>{item3.id.toUpperCase()}</p>
+                                                                                                        <Typography.Text strong>{item3.id.toUpperCase()}</Typography.Text>
                                                                                                         <Switch key={item3.id} style={{marginLeft: 20}} checked={item3.isShowed} onChange={() => handleChildMenuThirdLevel(item3)} />
                                                                                                     </div>
                                                                                                 }

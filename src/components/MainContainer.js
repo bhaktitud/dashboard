@@ -52,12 +52,12 @@ export default function MainContainer() {
 
                 <Layout style={{ padding: '0 24px 24px' }}>
                     <Breadcrumb style={{ margin: '16px 0' }}>
-                        <Breadcrumb.Item>Home</Breadcrumb.Item>
-                        <Breadcrumb.Item>List</Breadcrumb.Item>
+                        <Breadcrumb.Item>Avana Menu</Breadcrumb.Item>
                         <Breadcrumb.Item>Menu Controller</Breadcrumb.Item>
                     </Breadcrumb>
                     <div style={{width: '100%', maxHeight: window.innerHeight - 145, overflowY: 'scroll'}}>
                         <MainContent />
+                        <Footer style={{ textAlign: 'center' }}>Avana Dashboard Controller ©2020 Created by Bhakti Budiman Novanda</Footer>
                     </div>
                 </Layout>
             </Layout>
