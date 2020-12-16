@@ -1,3 +1,28 @@
+# How To Run The Project?
+
+You can either run this project locally or you can also run this project by clicking the deployed link below
+
+Steps to Run on Your Local:
+
+[By Downloading the files]
+1. Point out your mouse head to the 'code' button on the upper right of the repo
+2. Click on 'Download Zip'
+3. Extract the files, open it and run the cmd / git bash here
+4. Type in 'npm install' to install all the dependencies and wait the process to finish
+5. Type in 'npm start' to run the project, and head to the localhost with the specified port ^_^
+
+[By Cloning the files]
+1. Point out your mouse head to the 'code' button on the upper right of the repo
+2. Copy the HTTPS link
+3. Create new folder on your local, open it and run the cmd / git bash here
+4. Type in 'git clone paste_repo_link_here' and wait the process to finish
+5. Type in 'npm install' to install all the dependencies and wait the process to finish
+6. Type in 'npm start' to run the project, and head to the localhost with the specified port ^_^
+
+Or, simply hit this link to check out the project
+
+[The Avana Dashboard](https://youthful-pasteur-44621a.netlify.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
