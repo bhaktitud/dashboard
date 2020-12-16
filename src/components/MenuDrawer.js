@@ -56,7 +56,7 @@ export default function MenuDrawer() {
     }
 
     return (
-        <Sider width={350} collapsible={true} style={{height: '93vh', overflowY: 'scroll'}} onCollapse={handleSiderCollapsed} >
+        <Sider theme='dark' width={350} collapsible style={{height: '93vh'}} onCollapse={handleSiderCollapsed} >
             {
                 collapsedStatus ?
                     <div>
@@ -85,7 +85,7 @@ export default function MenuDrawer() {
               mode="inline"
               defaultSelectedKeys={['1']}
               defaultOpenKeys={['sub1']}
-              style={{ height: '100%', borderRight: 0 }}
+              style={{ maxHeight: '70%', borderRight: 0, overflowY: 'scroll' }}
               theme='dark'
             >
                 {

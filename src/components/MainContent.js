@@ -85,6 +85,7 @@ export default function MainContent() {
                 margin: 0,
                 minHeight: window.innerHeight - 145,
               }}
+              
             >
                 <Collapse>
                     {

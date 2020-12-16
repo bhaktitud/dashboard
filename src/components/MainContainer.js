@@ -1,11 +1,21 @@
 import { Layout, Menu, Breadcrumb, notification} from 'antd';
-import React from 'react';
+import React, { useEffect } from 'react';
 import MenuDrawer from './MenuDrawer';
 import MainContent from './MainContent';
 
 const { Header, Footer } = Layout;
 
 export default function MainContainer() {
+
+
+    useEffect(() => {
+        notification.info({
+            message: 'How To Use It?',
+            description: 'Hi Bhakti, simply just turn on/off the switch to hide or show the sidebar menu ^_^',
+            placement: 'bottomRight',
+            duration: 25
+        })
+    }, [])
 
     const handleRouteToHome = () => {
         notification.info({
@@ -38,9 +48,7 @@ export default function MainContainer() {
             </Header>
             
             <Layout hasSider>
-                {/* <div style={{width: 375, overflowY: 'scroll'}}> */}
-                    <MenuDrawer />
-                {/* </div> */}
+                <MenuDrawer />
 
                 <Layout style={{ padding: '0 24px 24px' }}>
                     <Breadcrumb style={{ margin: '16px 0' }}>
