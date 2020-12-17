@@ -55,7 +55,7 @@ export default function MainContainer() {
                         <Breadcrumb.Item>Avana Menu</Breadcrumb.Item>
                         <Breadcrumb.Item>Menu Controller</Breadcrumb.Item>
                     </Breadcrumb>
-                    <div style={{width: '100%', maxHeight: window.innerHeight - 145, overflowY: 'scroll'}}>
+                    <div style={{width: '100%', maxHeight: window.innerHeight - 145, overflowY: 'auto'}}>
                         <MainContent />
                         <Footer style={{ textAlign: 'center' }}>Avana Dashboard Controller ©2020 Created by Bhakti Budiman Novanda</Footer>
                     </div>

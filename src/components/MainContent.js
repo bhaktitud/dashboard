@@ -83,7 +83,7 @@ export default function MainContent() {
               style={{
                 padding: 20,
                 margin: 0,
-                minHeight: window.innerHeight - 145,
+                minHeight: window.innerHeight - 250,
               }}
               
             >

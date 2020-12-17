@@ -85,7 +85,7 @@ export default function MenuDrawer() {
               mode="inline"
               defaultSelectedKeys={['1']}
               defaultOpenKeys={['sub1']}
-              style={{ maxHeight: '70%', borderRight: 0, overflowY: 'scroll' }}
+              style={{ maxHeight: '70%', borderRight: 0, overflowY: 'auto' }}
               theme='dark'
             >
                 {
